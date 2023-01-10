@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-color: tomato; */
+  background-color: rgba(216, 208, 208, 0.719);
+}
+
+/* utility classes */
+.margin-small {
+  margin-top: 10px;
+}
+.margin-medium {
+  margin-top: 20px;
+}
+.center {
+  text-align: center;
+}
+
+/* main container  */
+main {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+/* Task Adder Div  */
+.add-task {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.add-task #task {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding: 8px;
+}
+
+.add-task #submit-btn {
+  border: none;
+  padding: 8px;
+  background-color: green;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.add-task #submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(7, 151, 7);
+}
+
+/* Tasks added Div  */
+.show-tasks {
+  list-style-type: none;
+}
+
+.show-tasks li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.task-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-icons i:hover {
+  cursor: pointer;
+}
+
+.show-tasks:last-child {
+  margin-bottom: 10px;
+}

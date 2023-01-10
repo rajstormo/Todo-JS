@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/85194b298d.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Todo App</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="center margin-small">My Todo App</h1>
+      <!-- Add Task -->
+      <div class="add-task margin-medium">
+        <input
+          type="text"
+          name="task"
+          id="task"
+          placeholder="Add your task here..."
+        />
+        <input
+          type="submit"
+          value="Add Task"
+          id="submit-btn"
+          class="margin-small"
+        />
+      </div>
+
+      <!-- Show Tasks -->
+      <div class="margin-medium" id="showTask-container">
+        <h2 class="center margin-small">Tasks Added</h2>
+        <ul class="show-tasks">
+        </ul>
+      </div>
+    </main>
+
+    <script src="./action.js"></script>
+  </body>
+</html>
